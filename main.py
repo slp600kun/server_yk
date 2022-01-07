@@ -5,9 +5,19 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/<name>')
-def namepage(name):
-    return render_template("name.html", name=name)
+@app.route('/Playlists')
+def Playlists():
+    return render_template("Playlists.html")
+
+@app.route('/Music')
+def Music():
+    return render_template("Music.html")
+
+@app.route('/Article')
+def Article():
+    return render_template("Article.html")
+
+
         
 if __name__ == "__main__":
     app.run()
