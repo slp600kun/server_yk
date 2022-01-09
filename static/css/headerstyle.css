@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* header
+------------------------------ */
+header {
+  padding: 5px 8% 5px;
+  background-color: #eff1f0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+header a {	
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+header li {
+  margin: 0 0 0 60px;
+  font-size: 18px;
+}
+
+header nav {
+  margin: 0 0 0 auto;
+}
