@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+.parent{
+  flex: 1; 
+  margin: 50vh auto 0;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+@font-face {
+  font-family: 'myfont'; /* フォント名 */
+  /* フォーマットごとにパスを指定 */
+  src: url('fonts/SigmarOne-Regular.ttf') format('truetype');
+}
+
+.parent p{
+ font-size: 100px;
+ font-family: 'myfont', sans-serif;
+ font-weight: bold;
+}
