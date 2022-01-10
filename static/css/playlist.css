@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+
+    background-image:url(image/Hiroshi\ Nagai.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:600px;
+    object-fit: cover;
+}
+
+
+@font-face {
+  font-family: 'myfont'; /* フォント名 */
+  /* フォーマットごとにパスを指定 */
+  src: url('fonts/BitterPro-MediumItalic.ttf') format('truetype');
+}
+
+.title p{
+ font-size: 100px;
+ font-family: 'myfont', sans-serif;
+ font-weight: bold;
+ color:#F8F8FF;
+ text-align: left;
+ line-height : 8.3em; 
+}

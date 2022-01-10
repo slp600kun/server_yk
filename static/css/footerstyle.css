@@ -8,6 +8,7 @@
     position: relative;/*←相対位置*/
     padding-bottom: 120px;/*←footerの高さ*/
     box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+    padding-top: 10px;
 }
 
 footer{
@@ -17,5 +18,4 @@ footer{
     text-align: center;
     padding: 0 0;
     position: absolute;/*←絶対位置*/
-    bottom: 0; /*下に固定*/
 }
