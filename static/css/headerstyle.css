@@ -37,3 +37,11 @@ header li {
 header nav {
   margin: 0 0 0 auto;
 }
+
+.nav-item :hover{
+  opacity: 0.6;
+}
+
+.headline :hover{
+  opacity: 0.6;
+}

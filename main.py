@@ -7,11 +7,11 @@ def index():
         index = True,
         title = 'index.html')
 
-@app.route('/Playlists')
-def Playlists():
-    return render_template("Playlists.html", \
-        Playlists = True,
-        title = 'Playlists.html')
+@app.route('/Playlist')
+def Playlist():
+    return render_template("Playlist.html", \
+        Playlist = True,
+        title = 'Playlist.html')
 
 @app.route('/Music')
 def Music():
@@ -25,6 +25,17 @@ def Article():
         Article = True,
         title = 'Article.html')
 
+@app.route('/Levitation21')
+def Levitation21():
+    return render_template("Levitation21.html", \
+        Article = True,
+        title = 'Levitation21.html')
+
+@app.route('/Playlist01')
+def Playlist01():
+    return render_template("Playlist01.html", \
+        Article = True,
+        title = 'Playlist01.html')
 
         
 if __name__ == "__main__":
