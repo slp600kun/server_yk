@@ -4,19 +4,30 @@
   box-sizing: border-box;
 }
 
-.title-1{
+.title-1, .title-2, .title-3{
     display: flex;
     flex-direction: column;
-
-    background-image:url(image/Hiroshi\ Nagai.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     width:100%;
     height:600px;
     object-fit: cover;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+/*画像の挿入*/
+.title-1{    
+    background-image:url(image/Hiroshi\ Nagai.jpg);
+}
+
+.title-2{    
+  background-image:url(image/grades-g40c9bc1e0_1920.jpg);
+}
+
+.title-3{    
+  background-image:url(image/Hiroshi\ Nagai.jpg);
+}
 
 @font-face {
   font-family: 'myfont'; /* フォント名 */
@@ -31,6 +42,15 @@
     font-weight: bold;
     color:#F8F8FF;
     text-align: left;
-    top: 340px;
+    top: 325px;
 }
 
+.title-2 p{
+  position: relative;
+  font-size: 100px;
+  font-family: 'myfont', sans-serif;
+  font-weight: bold;
+  color:#F8F8FF;
+  text-align: left;
+  top: 325px;
+}

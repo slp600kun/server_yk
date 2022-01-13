@@ -1,8 +1,6 @@
 {%- extends "layout.html" %}
 {%- block content %}
-    <link rel="stylesheet" href="static/css/playlist.css">
-    
-    
+       
 
     <main id="main">
 
@@ -16,10 +14,10 @@
                         <time itemprop="datePublished">2022/01/11</time>
                     </p>
                     <!--　タイトル　--> 
-                    <h2 class="title">クロスオーバー　プレイリスト1</h2>
+                    <h2 class="title"><a href="Playlist01">クロスオーバー　プレイリスト1</a></h2>
                     <!-- サムネイル　-->
                     <div itemprop="image" class="thumbnail">
-                        <a style="background-image:url(static/css/image/CaliCult.jpg);"></a>
+                        <a style="background-image:url(static/css/image/CaliCult.jpg);" href="Playlist01"></a>
                     </div>
                     <!--記事-->
                     <p itemprop="description" class="discription">
@@ -30,14 +28,7 @@
                 <div class="articlebox nav_page">
                 </div>
             </article>
-            <aside id="sidebar">
-                <!--プロフィール-->
-                <div class="articlebox profile">
-                    <img src="static/css/image/profile.JPEG" class=img_circle>
-                    <h3>YK</h3>
-                    <p>　都内の理系学生です。音楽(Classic,jazz,fusion,Rock(特にHard RockとProgressive Rock),metal,hiphop,neosoul等)を聴きます。楽器はピアノとキーボードとベースを弾きます。尊敬する作曲家はラヴェル。音楽以外の記事も書く予定です。</p>
-                </div>
-            </aside>
+            {% include "aside.html" %}
         </div>
   
     </main> 
