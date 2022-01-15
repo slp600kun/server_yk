@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import MongoList
 app = Flask(__name__)
 
 @app.route("/")
@@ -11,13 +12,15 @@ def index():
 def Playlist():
     return render_template("Playlist.html", \
         Playlist = True,
-        title = 'Playlist.html')
+        title = 'Playlist.html',
+        contents = MongoList.MongoExsert("Article_box","container","category","Playlist"))
 
 @app.route('/Music')
 def Music():
     return render_template("Music.html", \
         Music = True,
-        title = 'Music.html')
+        title = 'Music.html',
+        contents = MongoList.MongoExsert("Article_box","container","category","Music"))
 
 @app.route('/Article')
 def Article():
@@ -40,3 +43,4 @@ def Playlist01():
         
 if __name__ == "__main__":
     app.run()
+
