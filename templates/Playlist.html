@@ -10,19 +10,20 @@
         <div class="container">
             <article>
                 <div class="articlebox wrap">
+                    
                     <p>
                         <time itemprop="datePublished">2022/01/11</time>
                     </p>
                     <!--　タイトル　--> 
-                    <h2 class="title"><a href="Playlist01">クロスオーバー　プレイリスト1</a></h2>
+                    <h2 class="title"><a href="Playlist01">{{contents['title']}}</a></h2>
                     <!-- サムネイル　-->
                     <div itemprop="image" class="thumbnail">
                         <a style="background-image:url(static/css/image/CaliCult.jpg);" href="Playlist01"></a>
                     </div>
                     <!--記事-->
                     <p itemprop="description" class="discription">
-                        　クロスオーバーという視点で厳選した曲をプレイリストに選びました。
-                        ジャンルとジャンルの持つ要素の相乗効果によって生まれる新しい音楽の例を紹介します。</p>
+                        {{contents['text']}}
+                    </p>
                 </div>
 
                 <div class="articlebox nav_page">
