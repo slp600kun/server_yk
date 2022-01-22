@@ -1,8 +1,15 @@
-{%- extends "layout.html" %}
-
-{%- block content %}
-			<link rel="stylesheet" href="static/css/index_content.css">		
-			<div class="parent">
-				<p>This is YK MUSIC.</p>				
-			</div>
+{%- extends "layout.html" %} {%- block content %}
+<link rel="stylesheet" href="static/css/index_content.css" />
+<div class="parent">
+  <p class="parenttitle">This is YK MUSIC.</p>
+  <div id="dragDropArea" class="empty-container">
+    <div class="wav_upload">
+      <p>wavファイルを選択してアップロード</p>
+    </div>
+    <br />
+    <ul id="audiolist"></ul>
+  </div>
+  <output id="outFileInfo" class="wav_info"></output><br />
+</div>
+<script src="static/JS/drag_drop.js"></script>
 {%- endblock %}
